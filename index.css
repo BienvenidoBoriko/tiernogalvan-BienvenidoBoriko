@@ -1,3 +1,130 @@
+/* Some CSS Setup - nothing to do with flexbox */
+html {
+  box-sizing: border-box;
+}
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f2f7f5;
+  color: #475d5b;
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-header h1 {
+  color: #00473e;
+}
+.page-header > a {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #00473e;
+  padding: 20px 5px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+  flex: 1 0 50%;
+}
+.page-header > a:hover {
+  background: #00362f;
+}
+.page-header .flex-nav {
+  display: none;
+  width: 100%;
+}
+.page-header .flex-nav.open {
+  display: block;
+}
+.page-header .flex-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d2e2dc;
+  width: 100%;
+}
+.page-header .flex-nav ul li {
+  border-bottom: 1px solid #f0f1f1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.page-header .flex-nav ul li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 2%;
+  color: #475d5b;
+}
+.page-header .flex-nav ul li a:hover {
+  background-color: #b5c7c0;
+}
+
+/* @media all and (min-width: 700px) {
+  .flex-nav {
+    display: block;
+    & ul {
+      display: flex;
+      flex-wrap: wrap;
+      & li {
+        flex: 1 1 50%;
+        text-align: center;
+      }
+    }
+  }
+
+  .page-header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  a.toggleNav {
+    display: none;
+  }
+} */
+@media all and (min-width: 1200px) {
+  .page-header {
+    margin-top: 3em;
+    flex-direction: row;
+  }
+  .page-header a.toggleNav {
+    display: none;
+  }
+  .page-header a.user {
+    order: 9999;
+    display: block;
+    flex-basis: 10%;
+  }
+  .page-header h1 {
+    width: 80%;
+    text-align: center;
+  }
+  .page-header .flex-nav {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    order: 99999;
+    display: block;
+  }
+  .page-header .flex-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .page-header .flex-nav ul li {
+    flex: 0 1 12%;
+    text-align: center;
+  }
+  .page-header .flex-nav ul li a {
+    padding: 1em;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
