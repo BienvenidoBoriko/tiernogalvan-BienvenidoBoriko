@@ -72,6 +72,47 @@ body {
   }
 }
 
+.content {
+  & > header,
+  & > section {
+    border: 1px solid #ddd;
+    box-shadow: 0px 10px 24px -4px rgba(0, 0, 0, 0.58);
+    margin-bottom: 1.2em;
+  }
+
+  & > section {
+    font-size: 1rem;
+    & h2 {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      background-color: #b1ccc2;
+      color: #00473e;
+      font-size: 1.2em;
+      font-weight: bolder;
+    }
+
+    & article {
+      font-size: inherit;
+      margin: 1.4em 0.4em 1.4em 0.4em;
+      & h3 {
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
+      & p {
+        font-size: 0.8em;
+      }
+
+      & img {
+        display: block;
+        width: 90%;
+        margin: auto;
+        box-shadow: 0px 5px 14px -3px rgba(0, 0, 0, 0.58);
+      }
+    }
+  }
+}
+
 /* @media all and (min-width: 700px) {
   .flex-nav {
     display: block;
