@@ -21,7 +21,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   & h1 {
+    margin: 1.2em 0;
+    width: 100%;
     color: #00473e;
+    text-align: center;
+    font-size:1.9em;
+    font-weight: bold;
   }
   & > a {
     color: white;
