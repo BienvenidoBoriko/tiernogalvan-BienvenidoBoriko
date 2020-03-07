@@ -7,5 +7,8 @@ function cargarEventos(evento) {
                 $('.page-header .flex-nav').toggleClass('open');
             });
         });
+
+        let fecha= new Date();
+        document.getElementById('anyo').innerText=fecha.getFullYear();
     }
 }
