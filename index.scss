@@ -115,7 +115,11 @@ body {
             }
             & p {
                 padding: 0 0.5em;
-                font-size: 1.2em;
+                font-size: 0.9em;
+            }
+            & a {
+                font-size: 0.9em;
+                text-decoration: none;
             }
             & .image-container {
                 flex: 0 1 45%;
@@ -157,9 +161,6 @@ body {
                     }
                 }
             }
-            & p {
-                font-size: 0.8em;
-            }
             & img {
                 display: block;
                 width: 90%;
@@ -185,7 +186,7 @@ body {
         & article {
             flex: 0 1 45%;
             position: relative;
-            margin: 1.1em 0.6em 0 0.6em;
+            margin: 1.1em 0.4em 0 0.4em;
             &:hover .image {
                 opacity: 0.3;
             }
